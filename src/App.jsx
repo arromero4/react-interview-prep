@@ -8,6 +8,10 @@ import UseProps from "./components/UseProps";
 import InlineConditional from "./components/InlineConditional";
 import HandlingEvents from "./components/HandlingEvents";
 import KeysReact from "./components/KeysReact";
+import FormsReact from "./components/FormsReact";
+import DynamicInputs from "./components/DynamicInputs";
+import CSSStylesReactJS from "./components/CSSStylesReactJS";
+import UncontrolledControled from "./components/UncontrolledControled";
 
 function App() {
   const [name, setName] = useState('Stark')
@@ -33,7 +37,14 @@ function App() {
       <HandlingEvents/>
       <hr />
       <KeysReact/>
-      
+      <hr />
+      <FormsReact/>
+      <hr />
+      <DynamicInputs/>
+      <hr />
+      <CSSStylesReactJS/>
+      <hr />
+      <UncontrolledControled/>
     </>
   );
 }
