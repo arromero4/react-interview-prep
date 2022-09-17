@@ -7,6 +7,7 @@ import StateWithClass from "./components/StateWithClass";
 import UseProps from "./components/UseProps";
 import InlineConditional from "./components/InlineConditional";
 import HandlingEvents from "./components/HandlingEvents";
+import KeysReact from "./components/KeysReact";
 
 function App() {
   const [name, setName] = useState('Stark')
@@ -30,6 +31,8 @@ function App() {
       <InlineConditional/>
       <hr />
       <HandlingEvents/>
+      <hr />
+      <KeysReact/>
       
     </>
   );
