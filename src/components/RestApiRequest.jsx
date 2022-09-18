@@ -16,12 +16,16 @@ const [pokemon, usePokemon] = useState([])
 
 //AXIOS
 useEffect(() => {
-  axios
+  try {
+    axios
     .get(`https://pokeapi.co/api/v2/pokemon/`)
     .then((res) => {
       usePokemon(res.data.results)
     })
     
+  } catch (error) {
+    console.error(error)
+  }
 }, []);
 
 
