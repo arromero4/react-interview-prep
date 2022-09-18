@@ -12,6 +12,9 @@ import FormsReact from "./components/FormsReact";
 import DynamicInputs from "./components/DynamicInputs";
 import CSSStylesReactJS from "./components/CSSStylesReactJS";
 import UncontrolledControled from "./components/UncontrolledControled";
+import InnerHTMLReact from "./components/InnerHTMLReact";
+import ReactFragments from "./components/ReactFragments";
+import RestApiRequest from "./components/RestApiRequest";
 
 function App() {
   const [name, setName] = useState('Stark')
@@ -45,6 +48,12 @@ function App() {
       <CSSStylesReactJS/>
       <hr />
       <UncontrolledControled/>
+      <hr />
+      <InnerHTMLReact/>
+      <hr />
+      <ReactFragments/>
+      <hr />
+      <RestApiRequest/>
     </>
   );
 }
