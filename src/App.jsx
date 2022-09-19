@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MapAndFilter from "./components/MapAndFilter";
 import UseStatesJS from "./components/UseStatesJS";
@@ -15,6 +15,12 @@ import UncontrolledControled from "./components/UncontrolledControled";
 import InnerHTMLReact from "./components/InnerHTMLReact";
 import ReactFragments from "./components/ReactFragments";
 import RestApiRequest from "./components/RestApiRequest";
+import DebouncingJS from "./components/DebouncingJS";
+import ContextApiJS from "./components/ContextApiJS";
+import ClassNamesJS from "./components/ClassNamesJS";
+import UsersHoc from "./components/UsersHoc";
+import PostHoc from "./components/PostHoc";
+import LazyLoading from "./components/LazyLoading";
 
 function App() {
   const [name, setName] = useState('Stark')
@@ -22,6 +28,8 @@ function App() {
   const ChangeName = () =>{
     setName('Andres')
   }
+
+  const Lorem = React.lazy(() => import ('./components/LazyLoading'))
 
 
   return (
@@ -54,6 +62,18 @@ function App() {
       <ReactFragments/>
       <hr />
       <RestApiRequest/>
+      <hr />
+      <DebouncingJS/>
+      <hr />
+      <ContextApiJS/>
+      <hr />
+      <ClassNamesJS/>
+      <hr />
+      <UsersHoc/>
+      <hr />
+      <PostHoc/>
+      <hr />
+      <LazyLoading/>
     </>
   );
 }
