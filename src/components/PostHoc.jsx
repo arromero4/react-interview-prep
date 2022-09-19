@@ -7,7 +7,7 @@ function PostHoc({ data }) {
       <h2>PostHoc</h2>
 
       {data.slice(0, 10).map((post) => (
-        <p>{post.body}</p>
+        <p key={post.id}>{post.body}</p>
       ))}
     </div>
   );

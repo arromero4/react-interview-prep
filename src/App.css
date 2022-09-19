@@ -8,3 +8,25 @@
 h1{
     color: red;
 }
+
+.grid-main{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-child{
+    border: 1px solid black;
+}
+
+.search{
+    width: 40%;
+    height: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    outline:none;
+    
+}

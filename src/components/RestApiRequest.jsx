@@ -118,7 +118,7 @@ export default function RestApiRequest() {
         {users.map((user) => (
           <>
             <li key={user.id}>
-            {`${user.id}. ${user.name}`}
+            {`${user.name}`}
             
             <button 
             onClick={() => updateData(user.id)}

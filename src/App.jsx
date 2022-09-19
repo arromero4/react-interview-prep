@@ -21,6 +21,12 @@ import ClassNamesJS from "./components/ClassNamesJS";
 import UsersHoc from "./components/UsersHoc";
 import PostHoc from "./components/PostHoc";
 import LazyLoading from "./components/LazyLoading";
+import HelperFunctions from "./components/HelperFunctions";
+import ArrayFunctions from "./components/ArrayFunctions";
+import CustomHooks from "./components/CustomHooks";
+import PromisesJS from "./components/PromisesJS";
+import CodeSplitting from "./components/CodeSplitting";
+import SearchFilter from "./components/SearchFilter";
 
 function App() {
   const [name, setName] = useState('Stark')
@@ -61,9 +67,9 @@ function App() {
       <hr />
       <ReactFragments/>
       <hr />
-      <RestApiRequest/>
+      {/* <RestApiRequest/> */}
       <hr />
-      <DebouncingJS/>
+      {/* <DebouncingJS/> */}
       <hr />
       <ContextApiJS/>
       <hr />
@@ -74,6 +80,18 @@ function App() {
       <PostHoc/>
       <hr />
       <LazyLoading/>
+      <hr />
+      <HelperFunctions/>
+      <hr />
+      <ArrayFunctions/>
+      <hr />
+      {/* <CustomHooks/> */}
+      <hr />
+      <PromisesJS/>
+      <hr/>
+      {/* <CodeSplitting/> */}
+      <hr />
+      <SearchFilter/>
     </>
   );
 }
